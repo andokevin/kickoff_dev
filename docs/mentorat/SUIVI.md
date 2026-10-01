@@ -8,7 +8,7 @@
 | Élément            | Valeur                                              |
 |--------------------|-----------------------------------------------------|
 | Phase              | A — Conception                                      |
-| Étape              | A.1 — Cadrage : **choix du projet en attente** (A : kickoff_dev recentré sur les équipes étudiantes / B : commande en ligne pour restaurants + mobile money / C : kickoff_dev tel quel) |
+| Étape              | A.1 — Cadrage v2 (nouvelle cible : équipes de projet étudiantes + encadrant) : réponses aux questions révisées attendues |
 | Sprint en cours    | Aucun (les sprints démarrent en phase B, étape 12)  |
 | Issue en cours     | Aucune                                              |
 | Dépôt distant      | 1 commit (SUIVI.md) sur `claude/mentor-fullstack-nodejs-react-s8zaoe`, poussé le 2026-10-01 ; pas encore de `main` |
@@ -53,18 +53,22 @@
 - **Réponses incohérentes entre elles** (cadrage) : le persona principal « paie », mais son budget est « à préciser » ; on mesure « l'écart entre le planning prévu et le planning réel », mais le suivi du temps est hors-périmètre ; on vise une « planification d'équipe » pour un freelance qui travaille seul. → Réflexe : relire chaque réponse à la lumière des autres.
 - **Réponses non chiffrées** (« ça dépend », « à préciser ») là où un ordre de grandeur suffit. → Réflexe : donner une hypothèse chiffrée et la marquer « à valider ».
 - **Périmètre trop large** (4 problèmes, 4 personas, 5 indicateurs, 2 langues). → Réflexe : un seul de chaque pour le MVP, le reste en « plus tard ».
+- **Décision sans justification** (« on passe par A » sans le « pourquoi » demandé). → Réflexe : toute décision s'accompagne d'une phrase « parce que… ».
 
 ## 5. Points à réviser
 
 - Différence entre persona principal, persona secondaire et persona hors cible.
 - Indicateur principal (« north star ») contre indicateurs secondaires ; indicateur mesurable dès le MVP ou pas.
 - Savoir répondre à l'objection « un bon prompt dans ChatGPT suffit ».
+- Savoir justifier le choix du projet et le pivot (« pourquoi ce projet ? »).
+- Entretien de validation façon « Mom Test » : questions sur des faits passés, pas d'avis sur l'idée.
 
 ## 6. Décisions prises
 
 | Date | Décision | Pourquoi |
 |------|----------|----------|
 | 2026-09-30 | Le fichier de suivi vit dans `docs/mentorat/` | Seul dossier où le mentor écrit |
+| 2026-10-01 | **Pivot A** : kickoff_dev cible les équipes de projet étudiantes en informatique (Madagascar) et leur encadrant, au lieu du freelance seul | Cible joignable pour valider, toutes les fonctionnalités servent (équipe, disponibilités, validation humaine par l'encadrant), pas de paiement dans le MVP. Commande et paiement pour restaurants = projet 2 |
 
 ## 7. Notes techniques / environnement
 
@@ -106,3 +110,8 @@
   les fonctionnalités servent, IA au centre. L'option B (commande et paiement
   pour restaurants) devient le projet 2.
 - En attente : le choix de l'étudiant (A, B ou C) et sa justification.
+- Décision : **option A** (2026-10-01), mais sans la justification demandée → à
+  écrire dans le cadrage. Questions de cadrage révisées envoyées (Q1, Q3, Q4,
+  Q5-6, Q7, Q8, Q9, Q11, Q12, plus deux nouvelles questions : la valeur pour
+  l'encadrant et le risque de « triche »). Script d'entretien de validation
+  (Mom Test) à préparer pour 3 camarades et 1 encadrant.
