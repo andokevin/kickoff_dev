@@ -8,7 +8,7 @@
 | Élément            | Valeur                                              |
 |--------------------|-----------------------------------------------------|
 | Phase              | A — Conception                                      |
-| Étape              | A.1 — Cadrage (réponses relues ; 6 décisions + rédaction de `docs/conception/01-cadrage.md` attendues) |
+| Étape              | A.1 — Cadrage : **choix du projet en attente** (A : kickoff_dev recentré sur les équipes étudiantes / B : commande en ligne pour restaurants + mobile money / C : kickoff_dev tel quel) |
 | Sprint en cours    | Aucun (les sprints démarrent en phase B, étape 12)  |
 | Issue en cours     | Aucune                                              |
 | Dépôt distant      | 1 commit (SUIVI.md) sur `claude/mentor-fullstack-nodejs-react-s8zaoe`, poussé le 2026-10-01 ; pas encore de `main` |
@@ -97,3 +97,12 @@
   (« 10 min » pour tout le pack est irréaliste), un seul indicateur principal,
   le budget, une seule langue pour le MVP.
 - Modèle de `docs/conception/01-cadrage.md` donné (sections + consignes, pas le contenu).
+
+### Session 2 (suite) — 2026-10-01
+- L'étudiant demande s'il existe un projet plus réaliste (vrai problème, vraie
+  cible). Le mentor a comparé 3 options et recommande l'option A : kickoff_dev
+  recentré sur les équipes de projet étudiantes en informatique à Madagascar et
+  leur encadrant. Raisons : cible joignable cette semaine, problème vécu, toutes
+  les fonctionnalités servent, IA au centre. L'option B (commande et paiement
+  pour restaurants) devient le projet 2.
+- En attente : le choix de l'étudiant (A, B ou C) et sa justification.
