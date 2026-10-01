@@ -8,7 +8,7 @@
 | Élément            | Valeur                                              |
 |--------------------|-----------------------------------------------------|
 | Phase              | A — Conception                                      |
-| Étape              | A.1 — Cadrage v2 (nouvelle cible : équipes de projet étudiantes + encadrant) : réponses aux questions révisées attendues |
+| Étape              | A.1 — Cadrage v2 relu ; validé sous 4 conditions → rédaction de `docs/conception/01-cadrage.md` attendue |
 | Sprint en cours    | Aucun (les sprints démarrent en phase B, étape 12)  |
 | Issue en cours     | Aucune                                              |
 | Dépôt distant      | 1 commit (SUIVI.md) sur `claude/mentor-fullstack-nodejs-react-s8zaoe`, poussé le 2026-10-01 ; pas encore de `main` |
@@ -54,6 +54,8 @@
 - **Réponses non chiffrées** (« ça dépend », « à préciser ») là où un ordre de grandeur suffit. → Réflexe : donner une hypothèse chiffrée et la marquer « à valider ».
 - **Périmètre trop large** (4 problèmes, 4 personas, 5 indicateurs, 2 langues). → Réflexe : un seul de chaque pour le MVP, le reste en « plus tard ».
 - **Décision sans justification** (« on passe par A » sans le « pourquoi » demandé). → Réflexe : toute décision s'accompagne d'une phrase « parce que… ».
+- **Champs copiés-collés d'un persona à l'autre** (vu 2 fois : cadrage v1 et v2). → Réflexe : chaque persona a un objectif et une frustration qui lui sont propres.
+- **Rôles mélangés** : l'étudiant « suit plusieurs équipes » (c'est l'encadrant) ; le chef de projet valide le livrable (Q8) alors que c'est l'encadrant (Q5-6).
 
 ## 5. Points à réviser
 
@@ -61,14 +63,17 @@
 - Indicateur principal (« north star ») contre indicateurs secondaires ; indicateur mesurable dès le MVP ou pas.
 - Savoir répondre à l'objection « un bon prompt dans ChatGPT suffit ».
 - Savoir justifier le choix du projet et le pivot (« pourquoi ce projet ? »).
-- Entretien de validation façon « Mom Test » : questions sur des faits passés, pas d'avis sur l'idée.
+- Vocabulaire de l'ingénierie des exigences : élicitation, analyse, spécification, validation, gestion des exigences ; exigence fonctionnelle / non fonctionnelle ; exigence vérifiable ; matrice de traçabilité ; norme ISO/IEC/IEEE 29148 (qui a remplacé IEEE 830).
 
 ## 6. Décisions prises
 
 | Date | Décision | Pourquoi |
 |------|----------|----------|
 | 2026-09-30 | Le fichier de suivi vit dans `docs/mentorat/` | Seul dossier où le mentor écrit |
-| 2026-10-01 | **Pivot A** : kickoff_dev cible les équipes de projet étudiantes en informatique (Madagascar) et leur encadrant, au lieu du freelance seul | Cible joignable pour valider, toutes les fonctionnalités servent (équipe, disponibilités, validation humaine par l'encadrant), pas de paiement dans le MVP. Commande et paiement pour restaurants = projet 2 |
+| 2026-10-01 | ~~Pivot A : cible = équipes de projet étudiantes~~ (remplacé le jour même, voir ligne suivante) | — |
+| 2026-10-01 | **Identité du produit** : kickoff_dev est un atelier d'ingénierie des besoins et des exigences, et surtout de conception, guidé par l'IA. La cible se définit par le **rôle** (qui fait l'ingénierie des exigences et la conception), pas par le statut ; un projet étudiant n'est qu'un contexte d'usage parmi d'autres | Décision de l'étudiant : le produit ne s'adresse pas aux étudiants, il porte sur l'ingénierie des exigences et la conception |
+| 2026-10-01 | Pas d'entretiens de validation (Mom Test) | Décision de l'étudiant : on se concentre sur le projet |
+| 2026-10-01 | Langue (proposition du mentor, à confirmer dans le cadrage) : langue des documents générés choisie par projet (FR ou EN) dès le MVP ; interface en français seulement, multilingue prévu pour plus tard | Respecte le besoin « certains documents en anglais » sans doubler le travail sur l'interface |
 
 ## 7. Notes techniques / environnement
 
@@ -115,3 +120,17 @@
   Q5-6, Q7, Q8, Q9, Q11, Q12, plus deux nouvelles questions : la valeur pour
   l'encadrant et le risque de « triche »). Script d'entretien de validation
   (Mom Test) à préparer pour 3 camarades et 1 encadrant.
+
+### Session 2 (suite 2) — 2026-10-01
+- L'étudiant recadre : pas d'entretiens de validation ; le produit n'est pas
+  « pour les étudiants », c'est un atelier d'ingénierie des exigences et de
+  conception. Le mentor accepte.
+- Revue du cadrage v2. Points forts : Q14 (questions avant rédaction, sections
+  bloquées tant que leurs questions sont sans réponse, origine IA ou humaine de
+  chaque passage, historique de qui a répondu) ; Q9 mesurable grâce aux
+  horodatages ; « une séance de 2 h » est réaliste.
+- Bloquant : la cible déclarée (« pas pour les étudiants ») contredit le
+  persona (« étudiant en M2 »). Le différenciateur doit être la **traçabilité**
+  besoin → exigence → UML → user story, et non la répartition des tâches.
+- Cadrage validé à condition de corriger 4 points directement dans
+  `docs/conception/01-cadrage.md`.
