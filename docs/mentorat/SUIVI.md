@@ -1,17 +1,17 @@
 # Suivi du mentorat — kickoff_dev
 
 > Fichier tenu à jour par le mentor. Lu au début de chaque session.
-> Dernière mise à jour : 2026-09-30 (session 1)
+> Dernière mise à jour : 2026-10-01 (session 2)
 
 ## 1. État actuel
 
 | Élément            | Valeur                                              |
 |--------------------|-----------------------------------------------------|
 | Phase              | A — Conception                                      |
-| Étape              | A.1 — Cadrage (questions posées, réponses attendues) |
+| Étape              | A.1 — Cadrage (réponses relues ; 6 décisions + rédaction de `docs/conception/01-cadrage.md` attendues) |
 | Sprint en cours    | Aucun (les sprints démarrent en phase B, étape 12)  |
 | Issue en cours     | Aucune                                              |
-| Dépôt distant      | Vide au 2026-09-30 (aucun commit sur GitHub)        |
+| Dépôt distant      | 1 commit (SUIVI.md) sur `claude/mentor-fullstack-nodejs-react-s8zaoe`, poussé le 2026-10-01 ; pas encore de `main` |
 
 ## 2. Feuille de route (cocher au fur et à mesure)
 
@@ -38,7 +38,7 @@
 
 | Axe | Acquis | En cours | À venir |
 |-----|--------|----------|---------|
-| 1. Conception logicielle | — | Cadrage | Besoins, CDC, UML, archi |
+| 1. Conception logicielle | Structure d'un cadrage (problème, alternatives, personas, proposition de valeur, indicateurs, hors-périmètre) | Cohérence entre personas et fonctionnalités ; indicateurs mesurables | Besoins, CDC, UML, archi |
 | 2. Bases de données (conception, SQL, admin) | — | — | MCD/MLD, 3FN, rôles |
 | 3. Git / GitHub | — | — | SSH, protection, PR, CI |
 | 4. Node / Express / TS / React / IA | — | — | — |
@@ -50,11 +50,15 @@
 
 ## 4. Erreurs récurrentes
 
-- (aucune observée pour l'instant)
+- **Réponses incohérentes entre elles** (cadrage) : le persona principal « paie », mais son budget est « à préciser » ; on mesure « l'écart entre le planning prévu et le planning réel », mais le suivi du temps est hors-périmètre ; on vise une « planification d'équipe » pour un freelance qui travaille seul. → Réflexe : relire chaque réponse à la lumière des autres.
+- **Réponses non chiffrées** (« ça dépend », « à préciser ») là où un ordre de grandeur suffit. → Réflexe : donner une hypothèse chiffrée et la marquer « à valider ».
+- **Périmètre trop large** (4 problèmes, 4 personas, 5 indicateurs, 2 langues). → Réflexe : un seul de chaque pour le MVP, le reste en « plus tard ».
 
 ## 5. Points à réviser
 
-- (vide)
+- Différence entre persona principal, persona secondaire et persona hors cible.
+- Indicateur principal (« north star ») contre indicateurs secondaires ; indicateur mesurable dès le MVP ou pas.
+- Savoir répondre à l'objection « un bon prompt dans ChatGPT suffit ».
 
 ## 6. Décisions prises
 
@@ -81,3 +85,15 @@
 - Lancement de A.1 : 12 questions de cadrage posées (problème, personas,
   proposition de valeur, contraintes, hors-périmètre).
 - Prochaine action de l'étudiant : répondre aux questions de cadrage.
+
+### Session 2 — 2026-10-01
+- Commit du suivi poussé sur GitHub (l'accès est rétabli).
+- Réponses de cadrage relues en avocat du diable. Points forts : il reconnaît
+  honnêtement que le problème est encore une hypothèse ; il a vu le vrai défaut
+  de l'IA générique (elle produit sans poser de questions) ; il a suivi le coût
+  de l'IA dès le départ.
+- À trancher : le problème central, le persona principal (un freelance seul
+  n'a pas besoin de planification d'équipe), un résultat clé réaliste
+  (« 10 min » pour tout le pack est irréaliste), un seul indicateur principal,
+  le budget, une seule langue pour le MVP.
+- Modèle de `docs/conception/01-cadrage.md` donné (sections + consignes, pas le contenu).
