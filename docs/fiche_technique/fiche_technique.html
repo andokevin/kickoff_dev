@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche technique de stage</title>
+<style>
+  @page { size: A4; margin: 11mm 15mm 9mm 15mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Times New Roman", "Liberation Serif", serif; font-size: 9.8pt; line-height: 1.24; color: #000; }
+  .head { display: flex; justify-content: space-between; font-size: 8.6pt; line-height: 1.2; }
+  .title { width: 62%; margin: 5px auto 6px; border: 1px solid #000; border-radius: 7px; text-align: center; font-size: 12.5pt; letter-spacing: 5px; padding: 2px 0; }
+  h2 { font-size: 10pt; font-weight: normal; margin: 5px 0 3px; }
+  h2 span { text-decoration: underline; }
+  .row { margin: 1.5px 0; }
+  .lbl { white-space: nowrap; }
+  .two { display: flex; }
+  .two > div:first-child { width: 48%; }
+  .indent { margin-left: 26px; }
+  .boxes { display: flex; align-items: center; margin: 3px 0; }
+  .boxes .k { width: 62px; }
+  .opt { display: inline-flex; align-items: center; font-weight: bold; margin-right: 14px; }
+  .box { display: inline-block; width: 15px; height: 13px; border: 1px solid #000; margin-left: 5px; text-align: center; line-height: 12px; font-size: 9pt; font-weight: bold; }
+  table.st { width: 100%; border-collapse: collapse; margin: 4px 0 4px; font-size: 9.2pt; }
+  table.st th, table.st td { border: 1px solid #000; padding: 1px 5px; }
+  table.st th { font-weight: bold; text-align: center; }
+  .blk { margin: 3px 0 0; text-align: justify; }
+  .blk b.l { font-weight: normal; }
+  ul { margin: 0 0 0 26px; padding: 0 0 0 11px; }
+  li { margin: 0; text-align: justify; }
+  .sub { font-style: italic; }
+  .foot { text-align: right; font-size: 8.6pt; margin-top: 3px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <div>UNIVERSITE DE FIANARANTSOA<br>ECOLE NATIONALE D’INFORMATIQUE</div>
+  <div>Année Universitaire 2025-2026</div>
+</div>
+
+<div class="title">FICHE TECHNIQUE</div>
+
+<h2>1.&nbsp; <span>RENSEIGNEMENTS SUR L’ETABLISSEMENT D’ACCUEIL</span></h2>
+<div class="row">Sigle : CPAY</div>
+<div class="row">Raison Sociale : CPAY COMPANY FOR MADAGASCAR</div>
+<div class="row">Nom du responsable : RABARISON Mimi Stephane Thannio</div>
+<div class="row two"><div>Téléphone : +261 34 84 153 01</div><div>E-mail : director@c4m.mg</div></div>
+<div class="row">Adresse Postale : Ambohidahy Ankadindramamy, Antananarivo</div>
+<div class="row">Site Web : –</div>
+<div class="indent">
+  <div class="row">Encadreur professionnel : RABARISON Mimi Stephane Thannio</div>
+  <div class="row two"><div>Téléphone : 034 84 153 01</div><div>E-mail : director@c4m.mg</div></div>
+</div>
+
+<h2>2.&nbsp; <span>SUJET PROPOSE</span></h2>
+<div class="boxes"><span class="k">Niveau :</span>
+  <span class="opt">M2<span class="box">X</span></span>
+  <span class="opt">L3<span class="box"></span></span>
+  <span class="opt">L2<span class="box"></span></span>
+</div>
+<div class="boxes"><span class="k">Parcours :</span>
+  <span class="opt">IG<span class="box">X</span></span>
+  <span class="opt">GB<span class="box"></span></span>
+  <span class="opt">SR<span class="box"></span></span>
+  <span class="opt">GID<span class="box"></span></span>
+  <span class="opt">OCC<span class="box"></span></span>
+  <span class="opt">MDi<span class="box"></span></span>
+</div>
+
+<table class="st">
+  <tr><th style="width:40%">Nom et prénoms du stagiaire</th><th style="width:15%">IM</th><th style="width:17%">Téléphone</th><th>E-mail</th></tr>
+  <tr><td>RAHERINIAINA Ando Kevin</td><td>1401 H-FM2</td><td></td><td></td></tr>
+</table>
+
+<div class="blk">Intitulé ou Thème : <b>Conception et réalisation d’une plateforme SaaS multi-tenant de gestion des réclamations intégrant une qualification automatique par intelligence artificielle</b> (orientation GB – Génie logiciel et Base de données).</div>
+
+<div class="blk">Objectif : Concevoir et réaliser une plateforme SaaS multi-tenant permettant aux organisations de recevoir, qualifier, traiter et suivre les réclamations de leurs clients, avec paiement en ligne (Mobile Money MVola, Orange Money, Airtel Money et carte bancaire) et qualification automatique par un modèle de langage (résumé, catégorie, priorité, proposition de réponse) doté d’un mécanisme de repli. <span class="sub">Compétences visées :</span> architecture SaaS multi-tenant, API REST (Node.js, Express, TypeScript), React, Prisma, intégration de paiements (webhooks idempotents) et de LLM, tests automatisés, modélisation UML, méthode agile et Git.</div>
+
+<div class="blk">Descriptif :</div>
+<ul>
+  <li><b>Analyse et conception</b> : récits utilisateurs, diagrammes UML (cas d’utilisation, classes, séquence, activité), modèle de données et architecture multi-tenant.</li>
+  <li><b>Socle technique</b> : API Node.js / Express / TypeScript, front React / Vite, Prisma ; authentification, rôles, isolation des données par organisation ; intégration continue.</li>
+  <li><b>Gestion des réclamations</b> : dépôt public (dont QR code), affectation aux agents, suivi du traitement, espaces dédiés par organisation.</li>
+  <li><b>Abonnements et paiements</b> : Mobile Money et carte bancaire, recharges, factures PDF, notifications de paiement sécurisées et idempotentes.</li>
+  <li><b>Qualification par IA</b> : résumé, catégorie, priorité, routage et brouillon de réponse ; validation des sorties ; modèle local de repli.</li>
+  <li><b>Pilotage</b> : tableau de bord et indicateurs, notifications temps réel, exports CSV / Excel / PDF, interface bilingue FR / EN.</li>
+  <li><b>Qualité et production</b> : tests unitaires et d’intégration, supervision (Sentry), documentation OpenAPI, purge RGPD, déploiement.</li>
+</ul>
+<div class="indent" style="text-align:justify"><span class="sub">Livrables :</span> cahier des charges, dossier de conception, code source (Git), application déployée, documentation API, suite de tests, guides technique et utilisateur, rapport de stage. <span class="sub">Méthodologie :</span> Scrum (sprints, backlog d’issues GitHub) ; une branche et une Pull Request revue par issue, vérifiée en intégration continue.</div>
+
+<div class="blk">Planning prévisionnel :</div>
+<ul>
+  <li><b>Juillet 2026 – Analyse et conception</b> : étude de l’existant, recueil des besoins et backlog priorisé, diagrammes UML et modèle de données, architecture, contrats d’API, maquettes, plan de tests et pipeline CI/CD.</li>
+  <li><b>Août 2026 – Fonctionnalités cœur</b> : QR codes, formulaire public multilingue, pièces jointes, anti-spam ; tableau de bord, statistiques et SLA ; flux de statuts, notifications, modèles de réponse ; cloisonnement multi-organisation, gestion des agents.</li>
+  <li><b>Septembre 2026 – Monétisation et finition</b> : abonnements et paiements (MVola, Papi, Stripe), RGPD et exports, observabilité, vitrine SEO, accessibilité, refonte UI, tests, recette, documentation et mise en production.</li>
+</ul>
+
+<div class="blk">Moyens logiciels :</div>
+<div class="indent" style="text-align:justify">TypeScript, JavaScript, HTML / CSS, SQL, Bash, YAML. <i>Frontend</i> : React 18, Vite 5, React Router 6, axios, recharts, jspdf, exceljs, Stripe.js. <i>Backend</i> : Node.js 20, Express 4, Prisma 5 / MySQL, zod, JWT / bcrypt, helmet, multer / sharp, nodemailer, socket.io, pdfkit, winston. <i>Tests</i> : Vitest, Testing Library, Playwright, msw, jest-axe, ESLint. <i>IA</i> : Claude (Anthropic). <i>Outils</i> : Git / GitHub, GitHub Actions, Claude Code, VS Code, Sentry, Swagger / OpenAPI, Cloudflare, Lighthouse.</div>
+
+<div class="blk">Moyens matériels (précisez s’il s’agit de moyens disponibles ou à acquérir) : <i>disponibles</i></div>
+<ul>
+  <li>Ordinateur portable ASUS (Intel Core i5 2e génération, 10 Go de RAM, Linux Debian) : poste de développement.</li>
+  <li>VPS C4M (API host-api.c4m.mg, base MySQL) et hébergement web C4M (reclamia.c4m.mg) : mise en production.</li>
+  <li>Runner GitHub Actions auto-hébergé (machine Linux C4M) : build et déploiement automatiques.</li>
+</ul>
+
+</body>
+</html>
